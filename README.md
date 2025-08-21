@@ -26,5 +26,13 @@ Pilot your spaceship through the stars, collect cosmic treasures, and dodge aste
 ## 📷 Preview
 *(Add your game screenshot here)*  
 
+---
 
-@CodeByImran
+👨‍💻 Author
+
+Code by Imran
+
+
+
+
+
