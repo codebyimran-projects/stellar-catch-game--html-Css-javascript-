@@ -24,7 +24,7 @@ Pilot your spaceship through the stars, collect cosmic treasures, and dodge aste
 ---
 
 ## 📷 Preview
-*(Add your game screenshot here)*  
+https://codebyimran-projects.github.io/stellar-catch-game--html-Css-javascript-/ 
 
 ---
 
