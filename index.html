@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stellar Catch - Cosmic Adventure</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="stars-bg" id="starsBg"></div>
+    
+    <div class="game-container">
+        <div class="game-ui">
+            <div class="score-container">
+                <div class="score">⭐ <span id="scoreValue">0</span></div>
+            </div>
+            <div class="lives-container">
+                <div class="lives">❤️ <span id="livesValue">3</span></div>
+            </div>
+        </div>
+        
+        <div class="multiplier" id="multiplierDisplay">x2</div>
+        <div class="power-up-indicator" id="powerUpIndicator">Shield Active!</div>
+        
+        <canvas id="gameCanvas" width="800" height="600"></canvas>
+        
+        <div class="game-over" id="gameOver">
+            <h2>MISSION FAILED</h2>
+            <p>Your spaceship has been destroyed</p>
+            <div class="final-score">Final Score: <span id="finalScore">0</span></div>
+            <p id="newHighScore" style="display:none;color:#ffd700;">New High Score! �</p>
+            <button onclick="restartGame()">Try Again</button>
+        </div>
+        
+        <div class="instructions">
+            Use ← → arrow keys or A/D to move • Catch stars (⭐) • Avoid meteors (🪨) • Collect power-ups (🌀)
+        </div>
+
+        <div class="high-scores">
+            <h3>Galactic Records</h3>
+            <ol id="highScoresList">
+                <li>Loading...</li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="start-screen" id="startScreen">
+        <h1>STELLAR CATCH</h1>
+        <p>Navigate your spaceship through the cosmic storm! Collect falling stars while dodging dangerous meteors. Use power-ups to gain special abilities and climb the galactic leaderboard!</p>
+        
+        <div class="difficulty-selector">
+            <div class="difficulty-btn active" data-difficulty="easy">Easy</div>
+            <div class="difficulty-btn" data-difficulty="medium">Medium</div>
+            <div class="difficulty-btn" data-difficulty="hard">Hard</div>
+        </div>
+        
+        <button onclick="startGame()">Launch Mission</button>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
